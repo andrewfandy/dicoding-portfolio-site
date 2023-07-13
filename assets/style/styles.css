@@ -133,9 +133,12 @@ section {
         display: none;
     }
     #hamburger-btn{
-        display: block;
-        font-size: 1rem;
-        color: white;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 2.5rem;
+        margin-right: 1.5rem;
+
     }
     .container {
         /* background-color: yellow; */
