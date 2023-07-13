@@ -27,12 +27,13 @@ window.addEventListener('scroll', function() {
 });
 
 
-document.querySelector('.hamburger-btn').addEventListener('click', function() {
-    var navbar = document.querySelector('.navbar.mobile');
+document.querySelector('#hamburger-btn').addEventListener('click', function() {
+    const navbar = document.querySelector('.navbar.mobile');
     if (navbar.style.display === 'none') {
       navbar.style.display = 'block';
     } else {
       navbar.style.display = 'none';
     }
-  });
+});
+
   
