@@ -41,6 +41,13 @@ nav {
 
 
 
+.navbar.mobile {
+    display: none;
+}
+  
+#hamburger-btn {
+    display: none;
+}
 
 .nav-list{
     display: flex;
@@ -118,8 +125,15 @@ section {
     /* background-color: var(--secondary-color); */
 }
 @media screen and (max-width:768px) {
-    .navbar .desktop {
+    .navbar.desktop {
         display: none;
+    }
+    
+    .navbar.mobile{
+        display: block;
+    }
+    #hamburger-btn{
+        display: block;
     }
     .container {
         /* background-color: yellow; */
