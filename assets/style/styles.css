@@ -42,7 +42,7 @@ nav {
 
 
 
-.nav-list {
+.nav-list{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,6 +118,9 @@ section {
     /* background-color: var(--secondary-color); */
 }
 @media screen and (max-width:768px) {
+    .navbar .desktop {
+        display: none;
+    }
     .container {
         /* background-color: yellow; */
         width: 100%;
