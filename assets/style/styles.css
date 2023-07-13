@@ -130,10 +130,12 @@ section {
     }
     
     .navbar.mobile{
-        display: block;
+        display: none;
     }
     #hamburger-btn{
         display: block;
+        font-size: 1rem;
+        color: white;
     }
     .container {
         /* background-color: yellow; */
@@ -142,3 +144,5 @@ section {
     }
     
 }
+
+    
