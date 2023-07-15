@@ -34,3 +34,20 @@ document.querySelector('.bi').addEventListener('click', function() {
       navbar.style.display = 'none';
     }
 });
+
+
+let hamburgerBtn = document.querySelector('#hamburger-btn');
+let crossBtn = document.querySelector('#cross-btn');
+let navbar = document.querySelector('.navbar.mobile');
+
+hamburgerBtn.addEventListener('click', function() {
+    navbar.style.display = 'block';
+    hamburgerBtn.style.display = 'none';
+    crossBtn.style.display = 'block';
+});
+
+crossBtn.addEventListener('click', function() {
+    navbar.style.display = 'none';
+    crossBtn.style.display = 'none';
+    hamburgerBtn.style.display = 'block';
+});
