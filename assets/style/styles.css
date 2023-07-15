@@ -33,10 +33,10 @@ header {
     background-color: var(--primary-color);    
 }
 
-nav {
+.navbar.mobile,
+.navbar.desktop {
     padding: .5rem 0;
     width: 50%;
-    border-radius: 4rem;
 }
 
 
@@ -99,7 +99,7 @@ nav {
 
 /* MAIN CONTENT */
 main {
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     width: 100%;
 
@@ -123,11 +123,63 @@ section {
     align-items: center;
     /* background-color: var(--secondary-color); */
 }
-.home {
-    /* background-color: var(--secondary-color); */
+
+/* ASIDE CONTENT */
+.contact-me {
+    position: fixed;
+    bottom: 0;
+    right: 1rem;
+    height: 50vh;
+    cursor: pointer;
 }
+
+
+#cross-btn-aside {
+    display: none;
+}   
+.box,
+.aside-items {
+    border-radius: 50%;
+    padding: .5rem;
+    border: 3px solid var(--other-color);
+}
+.box:hover,
+.aside-items:hover{
+    background-color: var(--other-color);
+}
+
+/* CONTACT LIST */
+.aside-list {
+    display: none;
+    list-style-type: none;
+}
+
+.box.click {
+    
+}
+
+
+.aside-items a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.navbar.contact{
+    position: fixed;
+    bottom: 2.5rem;   
+    height: 50vh;
+}
+
+
+
+
+
 @media screen and (max-width:768px) {
     .navbar.desktop {
+        display: none;
+    }
+
+    .contact-me {
         display: none;
     }
     
@@ -161,7 +213,6 @@ section {
     #cross-btn{
         position: fixed;
         z-index: 1;
-        top: 1rem;
         right: 2rem;
         font-size: 2.25rem;
     }
