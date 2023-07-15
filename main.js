@@ -21,7 +21,6 @@ function setActiveClass() {
     navItems[index].parentElement.classList.add('active');
 }
 
-// Menjalankan fungsi setActiveClass saat window di-scroll
 window.addEventListener('scroll', function() {
     setActiveClass();
 });
@@ -35,4 +34,3 @@ document.querySelector('#hamburger-btn').addEventListener('click', function() {
       navbar.style.display = 'none';
     }
 });
-
