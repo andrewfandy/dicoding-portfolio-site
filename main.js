@@ -26,7 +26,7 @@ window.addEventListener('scroll', function() {
 });
 
 
-document.querySelector('#hamburger-btn').addEventListener('click', function() {
+document.querySelector('.bi').addEventListener('click', function() {
     const navbar = document.querySelector('.navbar.mobile');
     if (navbar.style.display === 'none') {
       navbar.style.display = 'block';

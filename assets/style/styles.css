@@ -30,7 +30,7 @@ header {
     z-index: 100;
     width: 100vw;
     padding: .75rem 0;
-    background-color: var(--other-color);    
+    background-color: var(--primary-color);    
 }
 
 nav {
@@ -45,7 +45,8 @@ nav {
     display: none;
 }
   
-#hamburger-btn {
+#hamburger-btn,
+#cross-btn {
     display: none;
 }
 
@@ -132,39 +133,53 @@ section {
     
     .navbar.mobile{
         display: none;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        transition: display 0.6s cubic-bezier(0.25, 1, 0.5, 1);;
+        width: 100vw;
+
     }
 
     header {
         padding: 2.25rem 0;
     }
 
-    #hamburger-btn{
+    .navbar.mobile .nav-list {
+        flex: 1;
+        align-items: flex-start;
+        flex-direction: column; 
+        width: 100%;
+    }
+    
+    .navbar.mobile .nav-item {
+        border-bottom: 1px solid #fff;
+        width: 100%; 
+        padding: 1.5rem;
+    }
+
+    .nav-item a::after{
+        display: none;
+    }
+
+    #hamburger-btn,
+    #cross-btn{
         position: fixed;
-        display: block;
         z-index: 1;
         top: 1rem;
         right: 2rem;
         font-size: 2.5rem;
-        
     }
 
-    .bi .bi-x-lg {
-        position: fixed;
-        display: none;
-        top: 1rem;
-        right: 4rem;
-        font-size: 2.5rem;
-        transition: display 0.6s cubic-bezier(0.25, 1, 0.5, 1);;
+    #hamburger-btn {
+        display: block;
     }
+    #cross-btn{
+        display: none;
+    }
+    
     .container {
         /* background-color: yellow; */
         width: 100%;
         height: 100vh;
     }
+    
     
 }
 
