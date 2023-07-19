@@ -51,3 +51,17 @@ crossBtn.addEventListener('click', function() {
     crossBtn.style.display = 'none';
     hamburgerBtn.style.display = 'block';
 });
+
+let box = document.querySelector('.box');
+let navbarContact = document.querySelector('.navbar.contact');
+
+box.addEventListener('click', function() {
+    if (navbarContact.style.display === 'none' || navbarContact.style.display === '') {
+        navbarContact.style.display = 'block';
+        box.innerHTML = '<i class="bi bi-x-lg"></i>';
+    } else {
+        navbarContact.style.display = 'none';
+        box.innerHTML = '<i class="bi bi-telephone-fill"></i>';
+    }
+});
+
