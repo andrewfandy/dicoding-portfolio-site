@@ -110,7 +110,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     /* border: 1px solid black; */
 }
 
@@ -219,13 +219,10 @@ section {
 
 
 @media screen and (max-width:768px) {
-    section {
-        width: 100vw;
-        height: 100vh;
-    }
+    
     /* TEST CONTAINER, BECAUSE THE ABOUT ME CONTENT IS OVERFLOWING WHEN ON MOBILE SCREEN */
     .container {
-        max-width: 100%;
+        /* max-width: 100%; */
         background-color: red;
     }
 
