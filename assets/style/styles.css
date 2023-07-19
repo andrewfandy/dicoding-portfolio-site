@@ -220,15 +220,7 @@ section {
 
 @media screen and (max-width:768px) {
     
-    /* TEST CONTAINER, BECAUSE THE ABOUT ME CONTENT IS OVERFLOWING WHEN ON MOBILE SCREEN */
-    .container {
-        min-height: 100vh;
-        background-color: red;
-    }
-
-    .container.home {
-        background-color: pink;
-    }
+    
     .navbar.desktop {
         display: none;
     }
@@ -279,9 +271,9 @@ section {
     }
     
     .container {
-        /* background-color: yellow; */
         width: 100%;
-        height: 100vh;
+        min-height: 100vh;
+        height: auto;
     }
     
     #mobile-contact {   
