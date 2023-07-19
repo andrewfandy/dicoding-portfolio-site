@@ -222,7 +222,7 @@ section {
     
     /* TEST CONTAINER, BECAUSE THE ABOUT ME CONTENT IS OVERFLOWING WHEN ON MOBILE SCREEN */
     .container {
-        /* max-width: 100%; */
+        min-height: 100vh;
         background-color: red;
     }
 
