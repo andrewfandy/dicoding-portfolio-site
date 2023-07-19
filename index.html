@@ -9,6 +9,11 @@
       rel="stylesheet"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+
     <link rel="stylesheet" href="assets/style/styles.css" />
   </head>
   <body>
@@ -60,7 +65,15 @@
           <div class="profile-card">
             <div id="profile-photo"></div>
             <h1>Selamat Datang</h1>
-            <p>Saya Andrew, <span>Fullstack</span> Developer</p>
+            <p>
+              Saya Andrew,
+              <span id="text-animation-list">
+                <span class="text-animation">Frontend</span>
+                <span class="text-animation">Backend</span>
+                <span class="text-animation">Fullstack</span>
+              </span>
+              Developer
+            </p>
           </div>
         </div>
       </section>
@@ -112,18 +125,30 @@
 
       <section id="skill">
         <div class="container skill">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos odit
-          quidem adipisci, officia tempora aspernatur saepe iste maiores aliquid
-          fuga excepturi, quam obcaecati tenetur cupiditate? Ex aliquam
-          explicabo, dicta ullam modi, soluta hic porro necessitatibus optio
-          doloremque velit dolorem fugit pariatur eaque facere reiciendis ipsum
-          distinctio fugiat doloribus aperiam libero? Ipsum officiis omnis,
-          sapiente fugiat, adipisci doloremque in, iure molestiae soluta
-          necessitatibus laborum obcaecati. Ipsa nam fugit in, ratione
-          voluptatem dolorem saepe tenetur eaque autem similique? Magnam
-          quibusdam excepturi debitis, numquam ab facere perferendis mollitia
-          accusamus, veniam libero vero ducimus cupiditate quam provident nisi.
-          Necessitatibus placeat voluptates laudantium voluptatibus distinctio!
+          <h2>Saya setiap hari terus mengasah kemampuan saya dalam :</h2>
+          <ul class="skill-list">
+            <li class="skill-item html5">
+              <i class="devicon-html5-plain-wordmark"><span>HTML</span></i>
+            </li>
+            <li class="skill-item css3">
+              <i class="devicon-css3-plain"><span>CSS</span></i>
+            </li>
+            <li class="skill-item javascript">
+              <i class="devicon-javascript-plain"><span>Javascript</span></i>
+            </li>
+            <li class="skill-item python">
+              <i class="devicon-python-plain"><span>Python</span></i>
+            </li>
+          </ul>
+          <h2>dan sedang mendalami</h2>
+          <ul class="skill-list">
+            <li class="skill-item django">
+              <i class="devicon-django-plain"><span>Django</span></i>
+            </li>
+            <li class="skill-item reactjs">
+              <i class="devicon-react-original"><span>ReactJS</span></i>
+            </li>
+          </ul>
         </div>
       </section>
     </main>

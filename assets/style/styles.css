@@ -111,7 +111,6 @@ section {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    /* border: 1px solid black; */
 }
 
 
@@ -130,7 +129,37 @@ section {
     align-items: center;   
     flex-direction: column;   
 }
+#text-animation-list {
+    height: 1.2rem;
+    text-decoration: red underline solid;
+    margin-right: 3.8rem;
+    overflow: hidden;
+    position: relative;
+}
 
+.text-animation {
+    position: absolute;
+    animation : slide 6s linear infinite;
+    opacity: 0;
+}
+
+.text-animation:nth-child(1){
+    animation-delay:0s;
+}
+.text-animation:nth-child(2){
+    animation-delay:2s;
+}
+.text-animation:nth-child(3){
+    animation-delay:4s;
+}
+
+@keyframes slide {
+    0% { transform: translateY(100%); opacity: 0; }
+    5% { transform: translateY(0%); opacity: 1; }
+    33% { transform: translateY(0%); opacity: 1; }
+    38% { transform: translateY(-100%); opacity: 0; }
+    100% { transform: translateY(-100%); opacity: 0; }
+}
 #profile-photo {
     border-radius: 50%;
     background-image: url("../images/andrew-removed-bg.png");
@@ -174,6 +203,33 @@ section {
 .hobby-item {
     margin: 1rem .5rem;
 }
+
+/* SKILL SECTION */
+.container.skill{
+    width: 50%;
+    text-align: center;
+}
+.container.skill>h2{
+    margin-top: 2rem;
+}
+.skill-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.skill-item{
+    cursor: default;
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+.skill-item span{
+    display: block;
+    font-size: 1rem;
+}
+
+
 /* ASIDE CONTENT */
 .contact-me {
     position: fixed;
@@ -203,10 +259,6 @@ section {
     list-style-type: none;
 }
 
-.box.click {
-    
-}
-
 
 .aside-items a{
     color: var(--text-color);
@@ -230,6 +282,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding: 2rem 3rem;
 }
 
@@ -238,8 +291,7 @@ section {
 
 
 @media screen and (max-width:768px) {
-    
-    
+
     .navbar.desktop {
         display: none;
     }
@@ -251,7 +303,7 @@ section {
     .navbar.mobile{
         display: none;
         width: 100vw;
-        min-height: 100vh;
+        max-height: 100vh;
     }
 
     header {
@@ -291,7 +343,7 @@ section {
     }
     
     .container {
-        width: 100%;
+        max-width: 100%;
         min-height: 100vh;
         height: auto;
     }
@@ -329,6 +381,18 @@ section {
     }
     .container.about-me {
         width: 100%;
+        max-width: 100vw;
+    }
+
+    /* SKILL MOBILE */
+    .container.skill{
+        width:100vw;
+    }
+    .container.skill>h2{
+        margin-top: .25rem;
+    }
+    .skill-item{
+        padding: 1rem;
     }
 }
 
