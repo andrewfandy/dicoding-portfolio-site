@@ -1,17 +1,13 @@
-// Mendapatkan semua elemen nav-item
+// AUTOMATE HIGHLIGHT NAVIGATION PER SECTION
 let navItems = document.querySelectorAll('.nav-item a');
-
-// Mendapatkan semua section
 let sections = document.querySelectorAll('section');
 
-// Fungsi untuk menghapus kelas 'active' dari semua nav-item
 function removeActiveClasses() {
     navItems.forEach((navItem) => {
         navItem.parentElement.classList.remove('active');
     });
 }
 
-// Fungsi untuk menambahkan kelas 'active' ke nav-item yang sesuai
 function setActiveClass() {
     let index = sections.length;
 
@@ -35,7 +31,7 @@ document.querySelector('.bi').addEventListener('click', function() {
     }
 });
 
-
+// MOBILE NAVIGATION
 let hamburgerBtn = document.querySelector('#hamburger-btn');
 let crossBtn = document.querySelector('#cross-btn');
 let navbar = document.querySelector('.navbar.mobile');
@@ -52,6 +48,16 @@ crossBtn.addEventListener('click', function() {
     hamburgerBtn.style.display = 'block';
 });
 
+
+navItems.forEach((navItem) => {
+    navItem.addEventListener('click', function() {
+        navbar.style.display = 'none';
+        crossBtn.style.display = 'none';
+        hamburgerBtn.style.display = 'block';
+    });
+});
+
+// ASIDE CONTACT BUTTON
 let box = document.querySelector('.box');
 let navbarContact = document.querySelector('.navbar.contact');
 
@@ -64,4 +70,7 @@ box.addEventListener('click', function() {
         box.innerHTML = '<i class="bi bi-telephone-fill"></i>';
     }
 });
+
+
+
 
