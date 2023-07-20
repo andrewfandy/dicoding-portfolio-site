@@ -95,18 +95,19 @@ let projectPreview = document.querySelector(".project-preview");
 let previewBtn = document.querySelector(".previewBtn")
 
 
+// JavaScript
 projectItems.forEach((projectItem) => {
     projectItem.addEventListener('click', function() {
-        projectPreview.style.display = 'block';
-        projectPreview.style.opacity = 1;
+        projectPreview.classList.add('show');
+        previewBtn.style.display = 'block';
     });
 });
 
 previewBtn.addEventListener('click', function(){
-    projectPreview.style.opacity = 0;
-    setTimeout(() => {
-        projectPreview.style.display = 'none';
-    }, 500);
+    projectPreview.classList.remove('show');
+    previewBtn.style.display = none;
+
 })
+
 
 

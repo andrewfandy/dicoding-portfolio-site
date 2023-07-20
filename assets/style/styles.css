@@ -346,7 +346,6 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    transition: opacity 0.5s;
 }
 .image-preview > img {
     width: 300px;
@@ -485,15 +484,21 @@ section {
     }
 
     .project-preview {
-        opacity: 0;
         position: fixed;
-        top: 0;
+        opacity: 0;
+        transition: opacity 0.5s;
+        display: none;
+        top: 5rem;
         right: 0;
         left: 0;
         bottom: 0;
         width: 100%;
         z-index: 2;
         background-color: var(--primary-color);
+    }
+    .project-preview.show {
+        opacity: 1;
+        display: block;
     }
     .preview.btn {
         margin-top: 1rem;
