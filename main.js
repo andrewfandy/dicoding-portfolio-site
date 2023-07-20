@@ -97,13 +97,16 @@ let previewBtn = document.querySelector(".previewBtn")
 
 projectItems.forEach((projectItem) => {
     projectItem.addEventListener('click', function() {
+        projectPreview.style.display = 'block';
         projectPreview.style.opacity = 1;
     });
 });
 
 previewBtn.addEventListener('click', function(){
     projectPreview.style.opacity = 0;
+    setTimeout(() => {
+        projectPreview.style.display = 'none';
+    }, 500);
 })
-
 
 
