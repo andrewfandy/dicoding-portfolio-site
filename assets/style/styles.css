@@ -482,21 +482,20 @@ section {
     }
 
     .project-preview {
-        position: fixed;
-        opacity: 0;
-        transition: opacity 0.5s;
         display: none;
-        top: 5rem;
+        
+    }
+    .project-preview.show {
+        display: block;
+        position: fixed;
+        top: 4rem;
         right: 0;
         left: 0;
         bottom: 0;
         width: 100%;
+        height: 100%;
         z-index: 2;
         background-color: var(--primary-color);
-    }
-    .project-preview.show {
-        opacity: 1;
-        display: block;
     }
 
 }

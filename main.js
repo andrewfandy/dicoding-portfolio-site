@@ -98,13 +98,12 @@ let projectPreview = document.querySelector(".project-preview");
 projectItems.forEach((projectItem) => {
     projectItem.addEventListener('click', function() {
         projectPreview.classList.add('show');
+        setTimeout(function() {
+            projectPreview.classList.remove('show');
+        }, 1750); //
     });
 });
 
-previewBtn.addEventListener('click', function(){
-    projectPreview.classList.remove('show');
-
-})
 
 
 
