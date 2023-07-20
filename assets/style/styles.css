@@ -169,6 +169,33 @@ section {
     height: 10rem;
     margin-bottom: 4rem;
 }
+
+/* CONTACT LIST */
+.contact-me {
+    position:relative;
+}
+.aside-list {
+    list-style-type: none;
+}
+
+
+.aside-items a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+
+.aside-items {
+    margin: 1rem;
+}
+.navbar.contact{
+    display: none;
+    position: fixed;
+    bottom: 4.3rem;
+    right: 3.75rem;   
+    height: 50vh;
+}
+
 /* ABOUT ME SECTION */
 .container.about-me {
     width:50%;
@@ -229,7 +256,7 @@ section {
 }
 
 
-/* ASIDE CONTENT */
+/* CONTACT ME */
 .contact-me {
     position: fixed;
     bottom: 0;
@@ -253,27 +280,61 @@ section {
     background-color: var(--other-color);
 }
 
-/* CONTACT LIST */
-.aside-list {
+
+/* PROJECT SECTION */
+
+#projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#projects > h2 {
+    margin-bottom: 2rem;
+}
+
+#projects>.container  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 65%;
+}
+
+.project-list {
     list-style-type: none;
 }
-
-
-.aside-items a{
-    color: var(--text-color);
-    text-decoration: none;
+.project-item {
+    text-align: left;
+    padding: 1rem 2rem 1rem 0;
+    border-bottom: 2px solid var(--secondary-color);
+    cursor:not-allowed;
+}
+.project-item:hover {
+    color: var(--light-color);
+    border-bottom: 2px solid var(--light-color);
+}
+.project-item >h4 {
+    display: inline;
 }
 
-.aside-items {
-    margin: 1rem;
+.project-item > .status.working-on {
+    color: #F4A259;
 }
-.navbar.contact{
-    display: none;
-    position: fixed;
-    bottom: 4.3rem;
-    right: 3.75rem;   
-    height: 50vh;
+
+.project-preview {
+    width: 70%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+.image-preview > img {
+    width: 300px;
+}
+
 
 /* PAGE FOOTER */
 
@@ -331,6 +392,7 @@ section {
         position: fixed;
         z-index: 1;
         right: 2rem;
+        top: 1.75rem;
         font-size: 2.25rem;
     }
 
@@ -395,6 +457,16 @@ section {
     }
     .skill-item{
         padding: 1rem;
+    }
+
+    /* PROJECTS MOBILE */
+    #projects{
+        width: 90%;
+        text-align: center;
+    }
+
+    .project-preview {
+        display: none;
     }
 }
 

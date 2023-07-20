@@ -23,6 +23,7 @@
           <li class="nav-item"><a href="#">HOME</a></li>
           <li class="nav-item"><a href="#about-me">ABOUT ME</a></li>
           <li class="nav-item"><a href="#skill">SKILL</a></li>
+          <li class="nav-item"><a href="#projects">PROJECT</a></li>
         </ul>
       </nav>
 
@@ -34,6 +35,7 @@
           <li class="nav-item"><a href="#">HOME</a></li>
           <li class="nav-item"><a href="#about-me">ABOUT ME</a></li>
           <li class="nav-item"><a href="#skill">SKILL</a></li>
+          <li class="nav-item"><a href="#projects">PROJECT</a></li>
         </ul>
 
         <footer id="mobile-contact">
@@ -61,7 +63,7 @@
 
     <main>
       <section id="home">
-        <div class="container home">
+        <article class="container home">
           <div class="profile-card">
             <div id="profile-photo"></div>
             <h1>Selamat Datang</h1>
@@ -75,11 +77,36 @@
               Developer
             </p>
           </div>
-        </div>
+        </article>
+        <aside class="contact-me">
+          <div class="box">
+            <i class="bi bi-telephone" id="phone-logo"></i>
+            <i class="bi bi-x-lg" id="cross-btn-aside"></i>
+          </div>
+          <nav class="navbar contact">
+            <ul class="aside-list">
+              <li class="aside-items">
+                <a href="https://github.com/andrewfandy" target="_blank"
+                  ><i class="bi bi-github"></i
+                ></a>
+              </li>
+              <li class="aside-items">
+                <a href="https://www.instagram.com/andrewfandy/" target="_blank"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </li>
+              <li class="aside-items">
+                <a href="mailto:andrewfandy13@gmail.com" target="_blank"
+                  ><i class="bi bi-envelope"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
       </section>
 
       <section id="about-me">
-        <div class="container about-me">
+        <article class="container about-me">
           <h2>Halo, saya Andrew</h2>
           <p class="about-me-description paragraph-one">
             Saya lahir dan dibesarkan di Pekalongan. Saya menyelesaikan
@@ -120,11 +147,11 @@
               </li>
             </ul>
           </footer>
-        </div>
+        </article>
       </section>
 
       <section id="skill">
-        <div class="container skill">
+        <article class="container skill">
           <h2>Saya setiap hari terus mengasah kemampuan saya dalam :</h2>
           <ul class="skill-list">
             <li class="skill-item html5">
@@ -149,35 +176,49 @@
               <i class="devicon-react-original"><span>ReactJS</span></i>
             </li>
           </ul>
-        </div>
+        </article>
+      </section>
+
+      <section id="projects">
+        <h2>
+          <i class="bi bi-stars"></i> Tuangan Eksperimen Saya
+          <i class="bi bi-stars"></i>
+        </h2>
+        <article class="container project">
+          <div class="project-card">
+            <ul class="project-list">
+              <li class="project-item">
+                <h3>Kalkulator Tanggalan</h3>
+                <p>Sebuah program untuk menghitung tanggal</p>
+                <h4>Status :</h4>
+                <span class="status working-on">Tahap Pengembangan</span>
+              </li>
+              <li class="project-item">
+                <h3>Timer</h3>
+                <p>Sebuah program timer</p>
+                <h4>Status :</h4>
+                <span class="status working-on">Tahap Pengembangan</span>
+              </li>
+              <li class="project-item">
+                <h3>TicTacToe Game</h3>
+                <p>Sebuah program TicTacToe</p>
+                <h4>Status :</h4>
+                <span class="status working-on">Tahap Pengembangan</span>
+              </li>
+            </ul>
+          </div>
+          <aside class="project-preview">
+            <h3>Sedang dikerjakan :&rpar;</h3>
+            <div class="image-preview">
+              <img
+                src="/assets/images/test-removebg-preview.png"
+                alt="Work in Progress"
+              />
+            </div>
+          </aside>
+        </article>
       </section>
     </main>
-
-    <aside class="contact-me">
-      <div class="box">
-        <i class="bi bi-telephone" id="phone-logo"></i>
-        <i class="bi bi-x-lg" id="cross-btn-aside"></i>
-      </div>
-      <nav class="navbar contact">
-        <ul class="aside-list">
-          <li class="aside-items">
-            <a href="https://github.com/andrewfandy" target="_blank"
-              ><i class="bi bi-github"></i
-            ></a>
-          </li>
-          <li class="aside-items">
-            <a href="https://www.instagram.com/andrewfandy/" target="_blank"
-              ><i class="bi bi-instagram"></i
-            ></a>
-          </li>
-          <li class="aside-items">
-            <a href="mailto:andrewfandy13@gmail.com" target="_blank"
-              ><i class="bi bi-envelope"></i
-            ></a>
-          </li>
-        </ul>
-      </nav>
-    </aside>
 
     <footer class="page-footer">
       <div class="footer-container">

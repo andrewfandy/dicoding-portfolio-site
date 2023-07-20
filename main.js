@@ -48,12 +48,14 @@ crossBtn.addEventListener('click', function() {
     hamburgerBtn.style.display = 'block';
 });
 
-
+// NAVBAR AUTOMATE CLOSE WHEN USER CLICK(MOBILE) NAVIGATION LINK
 navItems.forEach((navItem) => {
     navItem.addEventListener('click', function() {
-        navbar.style.display = 'none';
-        crossBtn.style.display = 'none';
-        hamburgerBtn.style.display = 'block';
+        if (navbar.style.display === "block"){
+            navbar.style.display = 'none';
+            crossBtn.style.display = 'none';
+            hamburgerBtn.style.display = 'block';
+        }
     });
 });
 
@@ -62,14 +64,19 @@ let box = document.querySelector('.box');
 let navbarContact = document.querySelector('.navbar.contact');
 
 box.addEventListener('click', function() {
-    if (navbarContact.style.display === 'none' || navbarContact.style.display === '') {
+    if (navbarContact.style.display === 'none' || navbarContact.style.display === '' ) {
         navbarContact.style.display = 'block';
         box.innerHTML = '<i class="bi bi-x-lg"></i>';
     } else {
         navbarContact.style.display = 'none';
-        box.innerHTML = '<i class="bi bi-telephone-fill"></i>';
+        box.innerHTML = '<i class="bi bi-telephone"></i>';
     }
 });
+
+
+// PROJECTS ANIMATION
+let projectItem = document.querySelector(".project-item")
+let 
 
 
 
