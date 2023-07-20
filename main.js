@@ -92,20 +92,17 @@ projectItems.forEach((projectItem) => {
 
 // PREVIEW POP-UP
 let projectPreview = document.querySelector(".project-preview");
-let previewBtn = document.querySelector(".previewBtn")
 
 
 // JavaScript
 projectItems.forEach((projectItem) => {
     projectItem.addEventListener('click', function() {
         projectPreview.classList.add('show');
-        previewBtn.style.display = 'block';
     });
 });
 
 previewBtn.addEventListener('click', function(){
     projectPreview.classList.remove('show');
-    previewBtn.style.display = none;
 
 })
 

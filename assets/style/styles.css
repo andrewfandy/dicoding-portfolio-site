@@ -350,9 +350,7 @@ section {
 .image-preview > img {
     width: 300px;
 }
-.preview.btn {
-    display: none;
-}
+
 
 /* PAGE FOOTER */
 
@@ -500,12 +498,7 @@ section {
         opacity: 1;
         display: block;
     }
-    .preview.btn {
-        margin-top: 1rem;
-        font-size: .75rem;
-        padding: 1em 2em;
-        border-radius: 3em;
-    }
+
 }
 
     
