@@ -75,9 +75,35 @@ box.addEventListener('click', function() {
 
 
 // PROJECTS ANIMATION
-let projectItem = document.querySelector(".project-item")
-let 
+let projectItems = document.querySelectorAll('.project-item');
 
+projectItems.forEach((projectItem) => {
+    projectItem.addEventListener('click', function() {
+        let projectPreview = document.querySelector('.project-preview h3');
+        projectPreview.style.animation = 'shake 0.5s';
+        projectPreview.style.animationIterationCount = '1';
+
+        projectPreview.addEventListener('animationend', function() {
+            this.style.animation = '';
+        });
+    });
+});
+
+
+// PREVIEW POP-UP
+let projectPreview = document.querySelector(".project-preview");
+let previewBtn = document.querySelector(".previewBtn")
+
+
+projectItems.forEach((projectItem) => {
+    projectItem.addEventListener('click', function() {
+        projectPreview.style.opacity = 1;
+    });
+});
+
+previewBtn.addEventListener('click', function(){
+    projectPreview.style.opacity = 0;
+})
 
 
 
